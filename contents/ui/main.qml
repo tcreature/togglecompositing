@@ -89,6 +89,5 @@ Item {
         // the same action that happens when we trigger the "Suspend Compositing"
         // KWin keyboard shortcut.
         executable.exec("qdbus org.kde.kglobalaccel /component/kwin org.kde.kglobalaccel.Component.invokeShortcut 'Suspend Compositing'");
-        print(plasmoid.formFactor);
     }
 }
