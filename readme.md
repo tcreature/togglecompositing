@@ -1,9 +1,14 @@
 # Toggle Compositing
 A simple KDE plasmoid to toggle desktop compositing.
+## KDE Store Page
+https://www.pling.com/p/1596521/
 ## Installation
 ### Method 1
 Install from KDE's widget browser
 ### Method 2
-Run `kpackagetool5 -t Plasma/Applet --install org.kde.plasma.togglecompositing.plasmoid`
+Download the latest release from github or the KDE store and run `kpackagetool5 -t Plasma/Applet --install /path/to/archive`
 ### Method 3
-Manually copy the contents to `~/.local/share/plasma/plasmoids/org.kde.plasma.togglecompositing`
+Manually copy the contents of the archive to `~/.local/share/plasma/plasmoids/org.kde.plasma.togglecompositing`
+## TODO
+* Make icon colors adapt to user's system theme
+
