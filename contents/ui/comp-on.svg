@@ -7,7 +7,6 @@
    inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
@@ -27,13 +26,13 @@
      inkscape:object-nodes="false"
      inkscape:bbox-paths="true"
      inkscape:bbox-nodes="true"
-     inkscape:zoom="26.752292"
-     inkscape:cx="0.093449938"
-     inkscape:cy="6.5601856"
+     inkscape:zoom="27.889672"
+     inkscape:cx="10.039559"
+     inkscape:cy="5.952024"
      inkscape:window-width="1600"
      inkscape:window-height="839"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-x="1366"
+     inkscape:window-y="174"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer4">
     <inkscape:grid
@@ -42,18 +41,6 @@
   </sodipodi:namedview>
   <defs
      id="defs3051">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient1443">
-      <stop
-         style="stop-color:#999999;stop-opacity:1;"
-         offset="0"
-         id="stop1439" />
-      <stop
-         style="stop-color:#999999;stop-opacity:0;"
-         offset="1"
-         id="stop1441" />
-    </linearGradient>
     <style
        type="text/css"
        id="current-color-scheme">
@@ -61,16 +48,6 @@
         color:#eff0f1;
       }
       </style>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient1443"
-       id="linearGradient1445"
-       x1="9"
-       y1="2"
-       x2="9"
-       y2="15"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.83333333,0,0,0.83333333,3.5,-0.8333333)" />
   </defs>
   <g
      inkscape:groupmode="layer"
@@ -78,7 +55,7 @@
      inkscape:label="Layer 2"
      style="display:inline">
     <path
-       style="color:#eff0f1;fill:url(#linearGradient1445);fill-opacity:1;stroke:none;stroke-width:0.833333"
+       style="color:currentColor;fill:currentColor;fill-opacity:0.465821;stroke:none;stroke-width:0.833333"
        d="M 6,0 V 9.401042 10 H 16 V 9.166667 8.333333 7.5 6.6666667 0 Z"
        class="ColorScheme-Text"
        id="path4-3"
@@ -102,91 +79,105 @@
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M -2,2 V 2"
+       class="ColorScheme-Text"
        id="path2139" />
     <g
-       id="g4713"
-       transform="matrix(3.0219633,0,0,3.0143272,21.043926,-8.0429814)">
-      <path
-         id="rect2988"
-         style="fill:#f2f2f2"
-         d="M -2.7715096,3.1300898 -2,3 -2.1275635,3.7747707 Z"
-         sodipodi:nodetypes="cccc" />
-      <rect
-         style="fill:#f2f2f2"
-         id="rect3760"
-         width="0.96280611"
-         height="0.27907336"
-         x="-4.8017106"
-         y="0.56934845"
-         transform="rotate(-45)" />
-    </g>
-    <g
-       id="g4713-27-3-6"
-       transform="matrix(3.0219633,0,0,3.0143272,15.043927,-8.0429816)">
-      <path
-         id="rect2988-0-6-2"
-         style="fill:#f2f2f2"
-         d="M -2.7715096,3.1300898 -2,3 -2.1275635,3.7747707 Z"
-         sodipodi:nodetypes="cccc" />
-      <rect
-         style="fill:#f2f2f2"
-         id="rect3760-9-0-6"
-         width="0.96280611"
-         height="0.27907336"
-         x="-4.8017106"
-         y="0.56934845"
-         transform="rotate(-45)" />
-    </g>
-    <g
-       id="g4713-27-3-6-1-7"
-       transform="matrix(3.0219638,0,0,3.0143272,9.0439277,-8.0429814)">
-      <path
-         id="rect2988-0-6-2-8-3"
-         style="fill:#f2f2f2"
-         d="M -2.7715096,3.1300898 -2,3 -2.1275635,3.7747707 Z"
-         sodipodi:nodetypes="cccc" />
-      <rect
-         style="fill:#f2f2f2"
-         id="rect3760-9-0-6-7-6"
-         width="0.96280611"
-         height="0.27907336"
-         x="-4.8017106"
-         y="0.56934845"
-         transform="rotate(-45)" />
-    </g>
-    <g
-       id="g4713-6-3-9-2"
-       transform="matrix(3.0219633,0,0,3.0143272,21.043927,-2.0429816)">
-      <path
-         id="rect2988-7-5-2-3"
-         style="fill:#f2f2f2"
-         d="M -2.7715096,3.1300898 -2,3 -2.1275635,3.7747707 Z"
-         sodipodi:nodetypes="cccc" />
-      <rect
-         style="fill:#f2f2f2"
-         id="rect3760-5-6-0-7"
-         width="0.96280611"
-         height="0.27907336"
-         x="-4.8017106"
-         y="0.56934845"
-         transform="rotate(-45)" />
-    </g>
-    <g
-       id="g4713-6-3-9-2-5-2"
-       transform="matrix(3.0219639,0,0,3.0143272,21.043928,3.9570186)">
-      <path
-         id="rect2988-7-5-2-3-9-8"
-         style="fill:#f2f2f2"
-         d="M -2.7715096,3.1300898 -2,3 -2.1275635,3.7747707 Z"
-         sodipodi:nodetypes="cccc" />
-      <rect
-         style="fill:#f2f2f2"
-         id="rect3760-5-6-0-7-2-9"
-         width="0.96280611"
-         height="0.27907336"
-         x="-4.8017106"
-         y="0.56934845"
-         transform="rotate(-45)" />
+       id="g1087">
+      <g
+         id="g4713"
+         transform="matrix(3.0219633,0,0,3.0143272,21.043926,-8.0429814)">
+        <path
+           id="rect2988"
+           class="ColorScheme-Text"
+           style="fill:currentColor"
+           d="M -2.7715096,3.1300898 -2,3 -2.1275635,3.7747707 Z"
+           sodipodi:nodetypes="cccc" />
+        <rect
+           style="fill:currentColor"
+           class="ColorScheme-Text"
+           id="rect3760"
+           width="0.96280611"
+           height="0.27907336"
+           x="-4.8017106"
+           y="0.56934845"
+           transform="rotate(-45)" />
+      </g>
+      <g
+         id="g4713-27-3-6"
+         transform="matrix(3.0219633,0,0,3.0143272,15.043927,-8.0429816)">
+        <path
+           id="rect2988-0-6-2"
+           style="fill:currentColor"
+           class="ColorScheme-Text"
+           d="M -2.7715096,3.1300898 -2,3 -2.1275635,3.7747707 Z"
+           sodipodi:nodetypes="cccc" />
+        <rect
+           style="fill:currentColor"
+           class="ColorScheme-Text"
+           id="rect3760-9-0-6"
+           width="0.96280611"
+           height="0.27907336"
+           x="-4.8017106"
+           y="0.56934845"
+           transform="rotate(-45)" />
+      </g>
+      <g
+         id="g4713-27-3-6-1-7"
+         transform="matrix(3.0219638,0,0,3.0143272,9.0439277,-8.0429814)">
+        <path
+           id="rect2988-0-6-2-8-3"
+           style="fill:currentColor"
+           class="ColorScheme-Text"
+           d="M -2.7715096,3.1300898 -2,3 -2.1275635,3.7747707 Z"
+           sodipodi:nodetypes="cccc" />
+        <rect
+           style="fill:currentColor"
+           class="ColorScheme-Text"
+           id="rect3760-9-0-6-7-6"
+           width="0.96280611"
+           height="0.27907336"
+           x="-4.8017106"
+           y="0.56934845"
+           transform="rotate(-45)" />
+      </g>
+      <g
+         id="g4713-6-3-9-2"
+         transform="matrix(3.0219633,0,0,3.0143272,21.043927,-2.0429816)">
+        <path
+           id="rect2988-7-5-2-3"
+           style="fill:currentColor"
+           class="ColorScheme-Text"
+           d="M -2.7715096,3.1300898 -2,3 -2.1275635,3.7747707 Z"
+           sodipodi:nodetypes="cccc" />
+        <rect
+           style="fill:currentColor"
+           class="ColorScheme-Text"
+           id="rect3760-5-6-0-7"
+           width="0.96280611"
+           height="0.27907336"
+           x="-4.8017106"
+           y="0.56934845"
+           transform="rotate(-45)" />
+      </g>
+      <g
+         id="g4713-6-3-9-2-5-2"
+         transform="matrix(3.0219639,0,0,3.0143272,21.043928,3.9570186)">
+        <path
+           id="rect2988-7-5-2-3-9-8"
+           class="ColorScheme-Text"
+           style="fill:currentColor"
+           d="M -2.7715096,3.1300898 -2,3 -2.1275635,3.7747707 Z"
+           sodipodi:nodetypes="cccc" />
+        <rect
+           style="fill:currentColor"
+           class="ColorScheme-Text"
+           id="rect3760-5-6-0-7-2-9"
+           width="0.96280611"
+           height="0.27907336"
+           x="-4.8017106"
+           y="0.56934845"
+           transform="rotate(-45)" />
+      </g>
     </g>
   </g>
 </svg>
