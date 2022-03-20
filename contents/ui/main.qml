@@ -43,8 +43,8 @@ Item {
         readonly property int minSize: Math.min(width, height)
         PlasmaCore.SvgItem {
             id: svgItem
-            property var compOnIcon: plasmoid.file('', 'ui/comp-on.svg')
-            property var compOffIcon: plasmoid.file('', 'ui/comp-off.svg')
+            property var compOnIcon: plasmoid.configuration.defaultIcon ? plasmoid.file('', 'ui/comp-on.svg') : (plasmoid.configuration.customCompOnIcon || plasmoid.file('', 'ui/comp-on.svg'))
+            property var compOffIcon: plasmoid.configuration.defaultIcon ? plasmoid.file('', 'ui/comp-off.svg') : (plasmoid.configuration.customCompOffIcon || plasmoid.file('', 'ui/comp-on.svg'))
             //active: compactMouseArea.containsMouse
             //source: compActive ? "comp-on.svg" : "comp-off.svg"
             anchors.centerIn: parent
