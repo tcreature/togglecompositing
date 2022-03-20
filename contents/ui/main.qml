@@ -1,8 +1,8 @@
-import QtQuick 2.5
-import QtQuick.Layouts 1.15
-import org.kde.plasma.core 2.0 as PlasmaCore
-import org.kde.plasma.plasmoid 2.0
-import org.kde.kwindowsystem 1.0
+import QtQuick 2
+import QtQuick.Layouts 1
+import org.kde.plasma.core 2 as PlasmaCore
+import org.kde.plasma.plasmoid 2
+import org.kde.kwindowsystem 1
 
 Item {
     id: root
