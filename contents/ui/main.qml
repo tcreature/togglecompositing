@@ -54,9 +54,11 @@ Item {
             width: panelItem.minSize * widthRatio
             height: panelItem.minSize * heightRatio
             smooth: true
-            svg: PlasmaCore.Svg {
+            PlasmaCore.IconItem {
                 id: svg
-                imagePath: (compActive ? svgItem.compOnIcon : svgItem.compOffIcon)
+                anchors.centerIn: parent
+                anchors.fill: parent
+                source: (compActive ? svgItem.compOnIcon : svgItem.compOffIcon)
             }
 
             MouseArea {

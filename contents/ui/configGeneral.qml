@@ -6,14 +6,25 @@ import org.kde.kquickcontrolsaddons 2 as KQuickAddons
 
 Item {
     id: page
-    property alias cfg_defaultIcon: defaultIcon.checked
-    property alias cfg_foo: fooo.foo
+    property alias cfg_defaultIcon: defaultIconRadio.checked
+    property alias cfg_customCompOnIcon: compOnIconButton.compOnIconString
+    property alias cfg_customCompOffIcon: compOffIconButton.compOffIconString
+
     KQuickAddons.IconDialog {
-        id: iconDialog
+        id: compOnIconDialog
 
         function setCustomButtonImage(image) {
-            configGeneral.cfg_customButtonImage = image || configGeneral.cfg_icon || "start-here-kde"
-            configGeneral.cfg_useCustomButtonImage = true;
+            compOnIconButton.compOnIconString = image
+        }
+
+        onIconNameChanged: setCustomButtonImage(iconName);
+    }
+
+    KQuickAddons.IconDialog {
+        id: compOffIconDialog
+
+        function setCustomButtonImage(image) {
+            compOffIconButton.compOffIconString = image
         }
 
         onIconNameChanged: setCustomButtonImage(iconName);
@@ -22,43 +33,83 @@ Item {
     Column{
 
         RadioButton {
-        id: defaultIcon
-        text: qsTr("foo")
+        id: defaultIconRadio
+        text: "Use Default Icons"
         }
 
         RadioButton {
-            text: "bar"
-            Row{
-                enabled: !defaultIcon.checked
-                anchors.top: parent.bottom
-                anchors.left: parent.right
-                spacing: 10
+            id: customIconRadio
+            checked: !defaultIconRadio.checked
+            text: "Use Custom Icons"
+            Column {
+                anchors.left: customIconRadio.horizontalCenter
+                anchors.top: customIconRadio.bottom
+                Row {
+                    enabled: !defaultIconRadio.checked
+                    spacing: 10
 
-                Label {
-                    text: "label"
-                    anchors.verticalCenter: parent.verticalCenter
+                    Label {
+                        text: "Compositing On:  "
+                        anchors.verticalCenter: compOnIconButton.verticalCenter
+                    }
+                    Button {
+                        id: compOnIconButton
+                        property string compOnIconString
+                        onClicked: {
+                            compOnIconDialog.open()
+                        }
+                        property var margin: 15
+                        property var previewSize: 48
+                        width: previewSize + margin
+                        height: previewSize + margin
+                        PlasmaCore.FrameSvgItem {
+                            anchors.centerIn: parent
+                            width: parent.width
+                            height: parent.height
+                            imagePath: plasmoid.location === PlasmaCore.Types.Vertical || plasmoid.location === PlasmaCore.Types.Horizontal ? "widgets/panel-background" : "widgets/background"
+                            PlasmaCore.IconItem {
+                                width: previewSize
+                                height: previewSize
+                                anchors.centerIn: parent
+                                source: compOnIconButton.compOnIconString || plasmoid.file('', 'ui/comp-on.svg')
+                            }
+                        }
+                    }
                 }
-                Button {
-                    id: fooo
-                    property string foo
-                    onClicked: console.log(foo)
-                    property var margin: 15
-                    width: PlasmaCore.Units.iconSizes.large + margin
-                    height: PlasmaCore.Units.iconSizes.large + margin
-                    PlasmaCore.SvgItem {
-                        id: svgItem
-                        width: PlasmaCore.Units.iconSizes.large
-                        height: PlasmaCore.Units.iconSizes.large
-                        anchors.centerIn: parent
-                        smooth: true
-                        svg: PlasmaCore.Svg {
-                            id: svg
-                            imagePath: plasmoid.file('', 'ui/comp-on.svg')
+
+                Row {
+                    enabled: !defaultIconRadio.checked
+                    spacing: 10
+
+                    Label {
+                        text: "Compositing Off: "
+                        anchors.verticalCenter: compOffIconButton.verticalCenter
+                    }
+                    Button {
+                        id: compOffIconButton
+                        property string compOffIconString
+                        onClicked: {
+                            compOffIconDialog.open()
+                        }
+                        property var margin: 15
+                        property var previewSize: 48
+                        width: previewSize + margin
+                        height: previewSize + margin
+                        PlasmaCore.FrameSvgItem {
+                            anchors.centerIn: parent
+                            width: parent.width
+                            height: parent.height
+                            imagePath: plasmoid.location === PlasmaCore.Types.Vertical || plasmoid.location === PlasmaCore.Types.Horizontal ? "widgets/panel-background" : "widgets/background"
+                            PlasmaCore.IconItem {
+                                width: previewSize
+                                height: previewSize
+                                anchors.centerIn: parent
+                                source: compOffIconButton.compOffIconString || plasmoid.file('', 'ui/comp-off.svg')
+                            }
                         }
                     }
                 }
             }
-
         }
     }
 }
