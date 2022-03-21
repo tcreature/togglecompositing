@@ -7,6 +7,9 @@ import org.kde.kquickcontrolsaddons 2 as KQuickAddons
 Item {
     id: page
     property alias cfg_defaultIcon: defaultIconRadio.checked
+    property alias cfg_whiteIcon: whiteIconRadio.checked
+    property alias cfg_blackIcon: blackIconRadio.checked
+    property alias cfg_customIcon: customIconRadio.checked
     property alias cfg_customCompOnIcon: compOnIconButton.compOnIconString
     property alias cfg_customCompOffIcon: compOffIconButton.compOffIconString
 
@@ -34,18 +37,27 @@ Item {
 
         RadioButton {
         id: defaultIconRadio
-        text: "Use Default Icons"
+        text: "Use Red/Green Icons"
+        }
+
+        RadioButton {
+        id: whiteIconRadio
+        text: "Use White Icons"
+        }
+
+        RadioButton {
+        id: blackIconRadio
+        text: "Use black Icons"
         }
 
         RadioButton {
             id: customIconRadio
-            checked: !defaultIconRadio.checked
             text: "Use Custom Icons"
             Column {
+                enabled: customIconRadio.checked
                 anchors.left: customIconRadio.horizontalCenter
                 anchors.top: customIconRadio.bottom
                 Row {
-                    enabled: !defaultIconRadio.checked
                     spacing: 10
 
                     Label {
@@ -78,7 +90,6 @@ Item {
                 }
 
                 Row {
-                    enabled: !defaultIconRadio.checked
                     spacing: 10
 
                     Label {
